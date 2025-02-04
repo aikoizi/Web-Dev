@@ -1,5 +1,4 @@
 * { 
-  margin-top: 100px; 
   margin: 0px; 
   padding: 0; 
   box-sizing: border-box; 
@@ -18,7 +17,6 @@ body {
 }
 
 .phone{
-  justify-content:flex-start;
   margin-left: 340px;
   }
 .box{ 
@@ -36,12 +34,7 @@ body {
   margin-left: 820px;
   margin-top: 33px;
 }
-.ili{
-  margin: 20px 0px; 
-  width:100%; 
-  font-size: 10px;
-  text-align: center;  
-}
+
 .box p { 
   margin: 20px 0px; 
   width:100%; 
@@ -81,11 +74,7 @@ body {
 .enter:hover{
   background-color:rgb(2, 102, 169);
 }
-.box hr { 
-  width: 100px; 
-  height: 0.4px; 
-  margin: 25px 40px;
-} 
+
 .link { 
   margin-left: 98px;  
   color: rgb(0, 149, 246); 
