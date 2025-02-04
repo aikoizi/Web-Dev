@@ -27,7 +27,6 @@ body {
   font-size: 28px; 
 } 
 .container{
-  justify-content:flex-start;
   max-width: 900px;
   width:100%;
   }
