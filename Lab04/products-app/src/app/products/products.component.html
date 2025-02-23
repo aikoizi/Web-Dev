@@ -1,0 +1,14 @@
+<div class="product-list">
+  <div *ngFor="let product of products" class="product-card">
+    <img class="product-image" [src]="product.image" [alt]="product.name" />
+    <h2 class="product-name">{{ product.name }}</h2>
+    <p class="product-description">{{ product.description }}</p>
+    <p class="product-rating">Rating: {{ product.rating }}</p>
+    <button class="share-button" (click)="shareProduct(product.link)">Share</button>
+    
+    <div *ngIf="product.gallery && product.gallery.length" class="product-gallery">
+      <img *ngFor="let img of product.gallery" class="gallery-image" [src]="img" [alt]="product.name" />
+    </div>
+  </div>
+</div>
+
