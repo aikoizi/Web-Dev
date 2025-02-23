@@ -1,0 +1,23 @@
+<header>
+  <h1>Магазин для животных</h1>
+</header>
+
+<main>
+  <section class="categories">
+    <h2>Категории</h2>
+    <div class="category-buttons">
+      <button *ngFor="let cat of categories" (click)="selectCategory(cat.id)">
+        {{ cat.name }}
+      </button>
+    </div>
+  </section>
+  <section *ngIf="selectedCategoryId !== null" class="product-list-container">
+    <h3>Товары категории: {{ selectedCategoryName }}</h3>
+    <app-product-list [products]="selectedProducts"></app-product-list>
+  </section>
+</main>
+
+<footer>
+  <p>© 2023 Магазин для животных</p>
+</footer>
+
