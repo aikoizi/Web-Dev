@@ -12,7 +12,6 @@ import { HousingService } from '../housing.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-  // Свойства для хранения всех и отфильтрованных данных
   housingLocationList: HousingLocation[] = [];
   filteredLocationList: HousingLocation[] = [];
 
@@ -27,7 +26,6 @@ export class HomeComponent {
     });
   }
   
-  // Метод фильтрации по городу
   filterResults(text: string) {
     if (!text) {
       this.filteredLocationList = this.housingLocationList;
