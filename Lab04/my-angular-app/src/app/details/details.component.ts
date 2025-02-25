@@ -50,7 +50,6 @@ export class DetailsComponent {
   housingService = inject(HousingService);
   housingLocation: HousingLocation | undefined;
 
-  // Создаем форму для подачи заявки
   applyForm: FormGroup = new FormGroup({
     firstName: new FormControl(''),
     lastName: new FormControl(''),
